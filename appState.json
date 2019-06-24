@@ -1,0 +1,114 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "e05ea526-fe41-4f61-a1ae-09dd8dac6a30": {
+        "id": "e05ea526-fe41-4f61-a1ae-09dd8dac6a30",
+        "parent": null,
+        "name": "hiru_testAPI2406",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "099be5f9-97cf-4583-babf-e1b9d2490695"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru_testAPI2406"
+      },
+      "099be5f9-97cf-4583-babf-e1b9d2490695": {
+        "id": "099be5f9-97cf-4583-babf-e1b9d2490695",
+        "parent": "e05ea526-fe41-4f61-a1ae-09dd8dac6a30",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru_testAPI2406/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIhirusampleget",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "e05ea526-fe41-4f61-a1ae-09dd8dac6a30",
+    "openFiles": [
+      "099be5f9-97cf-4583-babf-e1b9d2490695"
+    ],
+    "currentFileId": "099be5f9-97cf-4583-babf-e1b9d2490695",
+    "resources": {
+      "apigusEast1TestAPIhirusampleget": {
+        "name": "apigusEast1TestAPIhirusampleget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/hiru/test": "2b8zt0",
+            "/hiru": "3nc52b",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/test123": "kw67fb",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 0,
+          "resourceName": "hiru/sample",
+          "resourcePath": "/hiru/sample",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "f15z2q",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru_testAPI2406",
+    "projectDescription": "this was created to reproduce an issue",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561370817348
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru_testAPI2406",
+      "url": "https://github.com/HirudineeADRT/hiru_testAPI2406"
+    }
+  }
+}
